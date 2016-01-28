@@ -1,0 +1,4 @@
+digraph "testprova.main():void" {
+size = "11,7.5";
+codeblock_0 [ shape = box, label = "block 0\nnewstring KITTEN: testprova!\\n\ncall String.output():void [String.output():void]\nnew testprova\ndup testprova\ncall testprova() [testprova()]\nstore 0 of type testprova\nreturn void"];
+}

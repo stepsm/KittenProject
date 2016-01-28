@@ -1,0 +1,121 @@
+digraph testprova {
+size = "11,7.5";
+rotate = 90
+node45 [ label = "ClassDefinition"];
+symbol_testprova [label = "testprova" fontname = "Times-Italic" shape = box]
+node45 -> symbol_testprova [label = "name" fontsize = 8]
+symbol_Object [label = "Object" fontname = "Times-Italic" shape = box]
+node45 -> symbol_Object [label = "superclassName" fontsize = 8]
+node44 [ label = "ConstructorDeclaration"];
+node0 [ label = "Skip"];
+node44 -> node0 [label = "body" fontsize = 8]
+node43 [ label = "TestDeclaration"];
+node3 [ label = "LocalScope"];
+node2 [ label = "Assert"];
+node1 [ label = "False [boolean]"];
+node2 -> node1 [label = "condition" fontsize = 8]
+node3 -> node2 [label = "body" fontsize = 8]
+node43 -> node3 [label = "body" fontsize = 8]
+symbol_prova1 [label = "prova1" fontname = "Times-Italic" shape = box]
+node43 -> symbol_prova1 [label = "name" fontsize = 8]
+node42 [ label = "TestDeclaration"];
+node11 [ label = "LocalScope"];
+node10 [ label = "CommandSeq"];
+node5 [ label = "Assert"];
+node4 [ label = "True [boolean]"];
+node5 -> node4 [label = "condition" fontsize = 8]
+node10 -> node5 [label = "first" fontsize = 8]
+node9 [ label = "Assert"];
+node8 [ label = "NotEqual [boolean]"];
+node6 [ label = "IntLiteral [int]: 1"];
+node8 -> node6 [label = "left" fontsize = 8]
+node7 [ label = "IntLiteral [int]: 2"];
+node8 -> node7 [label = "right" fontsize = 8]
+node9 -> node8 [label = "condition" fontsize = 8]
+node10 -> node9 [label = "second" fontsize = 8]
+node11 -> node10 [label = "body" fontsize = 8]
+node42 -> node11 [label = "body" fontsize = 8]
+symbol_prova2 [label = "prova2" fontname = "Times-Italic" shape = box]
+node42 -> symbol_prova2 [label = "name" fontsize = 8]
+node41 [ label = "TestDeclaration"];
+node19 [ label = "LocalScope"];
+node18 [ label = "CommandSeq"];
+node13 [ label = "Assert"];
+node12 [ label = "True [boolean]"];
+node13 -> node12 [label = "condition" fontsize = 8]
+node18 -> node13 [label = "first" fontsize = 8]
+node17 [ label = "Assert"];
+node16 [ label = "Equal [boolean]"];
+node14 [ label = "IntLiteral [int]: 1"];
+node16 -> node14 [label = "left" fontsize = 8]
+node15 [ label = "IntLiteral [int]: 2"];
+node16 -> node15 [label = "right" fontsize = 8]
+node17 -> node16 [label = "condition" fontsize = 8]
+node18 -> node17 [label = "second" fontsize = 8]
+node19 -> node18 [label = "body" fontsize = 8]
+node41 -> node19 [label = "body" fontsize = 8]
+symbol_prova3 [label = "prova3" fontname = "Times-Italic" shape = box]
+node41 -> symbol_prova3 [label = "name" fontsize = 8]
+node40 [ label = "FixtureDeclaration"];
+node22 [ label = "LocalScope"];
+node21 [ label = "MethodCallCommand\nreferences String.output():void"];
+node20 [ label = "StringLiteral [String]: KITTEN: fixtureprova1\\n"];
+node21 -> node20 [label = "receiver" fontsize = 8]
+symbol_output [label = "output" fontname = "Times-Italic" shape = box]
+node21 -> symbol_output [label = "name" fontsize = 8]
+node22 -> node21 [label = "body" fontsize = 8]
+node40 -> node22 [label = "body" fontsize = 8]
+node39 [ label = "FixtureDeclaration"];
+node25 [ label = "LocalScope"];
+node24 [ label = "MethodCallCommand\nreferences String.output():void"];
+node23 [ label = "StringLiteral [String]: KITTEN: fixtureprova2\\n"];
+node24 -> node23 [label = "receiver" fontsize = 8]
+symbol_output [label = "output" fontname = "Times-Italic" shape = box]
+node24 -> symbol_output [label = "name" fontsize = 8]
+node25 -> node24 [label = "body" fontsize = 8]
+node39 -> node25 [label = "body" fontsize = 8]
+node38 [ label = "FixtureDeclaration"];
+node28 [ label = "LocalScope"];
+node27 [ label = "MethodCallCommand\nreferences String.output():void"];
+node26 [ label = "StringLiteral [String]: KITTEN: fixtureprova3\\n"];
+node27 -> node26 [label = "receiver" fontsize = 8]
+symbol_output [label = "output" fontname = "Times-Italic" shape = box]
+node27 -> symbol_output [label = "name" fontsize = 8]
+node28 -> node27 [label = "body" fontsize = 8]
+node38 -> node28 [label = "body" fontsize = 8]
+node37 [ label = "MethodDeclaration"];
+node29 [ label = "VoidTypeExpression [void]"];
+node37 -> node29 [label = "returnType" fontsize = 8]
+symbol_main [label = "main" fontname = "Times-Italic" shape = box]
+node37 -> symbol_main [label = "name" fontsize = 8]
+node36 [ label = "LocalScope"];
+node35 [ label = "CommandSeq"];
+node31 [ label = "MethodCallCommand\nreferences String.output():void"];
+node30 [ label = "StringLiteral [String]: KITTEN: testprova!\\n"];
+node31 -> node30 [label = "receiver" fontsize = 8]
+symbol_output [label = "output" fontname = "Times-Italic" shape = box]
+node31 -> symbol_output [label = "name" fontsize = 8]
+node35 -> node31 [label = "first" fontsize = 8]
+node34 [ label = "LocalDeclaration"];
+node32 [ label = "ClassTypeExpression [testprova]"];
+symbol_testprova [label = "testprova" fontname = "Times-Italic" shape = box]
+node32 -> symbol_testprova [label = "name" fontsize = 8]
+node34 -> node32 [label = "type" fontsize = 8]
+symbol_t [label = "t" fontname = "Times-Italic" shape = box]
+node34 -> symbol_t [label = "name" fontsize = 8]
+node33 [ label = "NewObject [testprova]\nreferences testprova()"];
+symbol_testprova [label = "testprova" fontname = "Times-Italic" shape = box]
+node33 -> symbol_testprova [label = "className" fontsize = 8]
+node34 -> node33 [label = "initialiser" fontsize = 8]
+node35 -> node34 [label = "second" fontsize = 8]
+node36 -> node35 [label = "body" fontsize = 8]
+node37 -> node36 [label = "body" fontsize = 8]
+node38 -> node37 [label = "next" fontsize = 8 style = bold]
+node39 -> node38 [label = "next" fontsize = 8 style = bold]
+node40 -> node39 [label = "next" fontsize = 8 style = bold]
+node41 -> node40 [label = "next" fontsize = 8 style = bold]
+node42 -> node41 [label = "next" fontsize = 8 style = bold]
+node43 -> node42 [label = "next" fontsize = 8 style = bold]
+node44 -> node43 [label = "next" fontsize = 8 style = bold]
+node45 -> node44 [label = "declarations" fontsize = 8]
+}

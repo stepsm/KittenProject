@@ -1,0 +1,16 @@
+digraph "testprova.prova2():void" {
+size = "11,7.5";
+codeblock_14 [ shape = box, label = "block 14\nconst true"];
+codeblock_13 [ shape = box, label = "block 13\nif_false\nnewstring failed at 10::2\nnewstring KITTEN: test fallito @testprova.kit:10.2\\n\ncall String.output():void [String.output():void]\nreturn String"];
+codeblock_14->codeblock_13 [color = blue label = "" fontsize = 8]
+codeblock_15 [ shape = box, label = "block 15\nif_true"];
+codeblock_11 [ shape = box, label = "block 11\nconst 1\nconst 2"];
+codeblock_10 [ shape = box, label = "block 10\nif_cmpeq int\nnewstring failed at 11::2\nnewstring KITTEN: test fallito @testprova.kit:11.2\\n\ncall String.output():void [String.output():void]\nreturn String"];
+codeblock_11->codeblock_10 [color = blue label = "" fontsize = 8]
+codeblock_12 [ shape = box, label = "block 12\nif_cmpne int"];
+codeblock_9 [ shape = box, label = "block 9\nnewstring passed\nreturn String"];
+codeblock_12->codeblock_9 [color = blue label = "" fontsize = 8]
+codeblock_11->codeblock_12 [color = blue label = "" fontsize = 8]
+codeblock_15->codeblock_11 [color = blue label = "" fontsize = 8]
+codeblock_14->codeblock_15 [color = blue label = "" fontsize = 8]
+}

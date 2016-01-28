@@ -1,0 +1,36 @@
+class  testprova {
+
+  constructor() {}
+
+test prova1{ 
+	assert(false) 
+	}
+	
+test prova2{ 
+	assert(true);
+	assert(1!=2)  
+	}
+	
+test prova3{ 
+	assert(true) ;
+	assert(1=2) 
+	}
+
+  fixture{ 
+  	"KITTEN: fixtureprova1\n".output()
+  	}
+  	
+  fixture{ 
+  	"KITTEN: fixtureprova2\n".output()
+  	}
+  	
+  fixture{ 
+  	"KITTEN: fixtureprova3\n".output()
+  	}
+  
+  method void main() {
+    "KITTEN: testprova!\n".output();
+    testprova t := new testprova()
+  }
+  
+}
